@@ -17,9 +17,18 @@ const routes: Routes = [
       import('./kanban/kanban.module').then((m) => m.KanbanModule),
   },
   {
+    path:'todo',
+    loadChildren: () => import('./todo/todo.module').then((m) => m.TodoModule),
+  },
+  {
     path: 'weather',
     loadChildren: () =>
       import('./wether-app/wether-app.module').then((m) => m.WetherAppModule),
+  },
+  {
+    path: 'video',
+    loadChildren: () =>
+      import('./i-frame/i-frame.module').then((m) => m.IFrameModule),
   },
 ];
 

@@ -1,1 +1,51 @@
-<p>home works!</p>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">{{ weatherData.name }}</h5>
+      <p class="card-subtitle text-muted">{{ weatherData.sys.country }}</p>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Temperature</h6>
+          <p>{{ weatherData.main.temp }} &deg;C</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Feels Like</h6>
+          <p>{{ weatherData.main.feels_like }} &deg;C</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Humidity</h6>
+          <p>{{ weatherData.main.humidity }}%</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Pressure</h6>
+          <p>{{ weatherData.main.pressure }} hPa</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Wind Speed</h6>
+          <p>{{ weatherData.wind.speed }} m/s</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Wind Direction</h6>
+          <p>{{ weatherData.wind.deg }}&deg;</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Weather</h6>
+          <p>{{ weatherData.weather[0].main }}</p>
+          <p>{{ weatherData.weather[0].description }}</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Cloudiness</h6>
+          <p>{{ weatherData.clouds.all }}%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

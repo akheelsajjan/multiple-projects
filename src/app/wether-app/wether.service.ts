@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class WetherService {
   private apiKey = '88a06e9985bafaa09134c03b750d0350';
-  private apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=';
+
 
   constructor(private http: HttpClient) { }
 
-  getWeather(city: string) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${this.apiKey}`;
+  getWeather(lat:number|undefined , long:number | undefined ) {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${this.apiKey}`;
     return this.http.get(url);
   }
 }

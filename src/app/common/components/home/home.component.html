@@ -1,23 +1,82 @@
+
+
+
+
+
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card text-bg-info">
+              <div class="card-body">
+                <h5 class="card-title">To Do List</h5>
+                <p class="card-text">A Simple To Do list built with bootstrap 5.</p>
+                <a [routerLink]="['/todo']" class="btn btn-light">view</a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        <div class="col-sm-6">
+          <div class="card  text-bg-secondary">
             <div class="card-body">
-              <h5 class="card-title">Kanban</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a [routerLink]="['/kanban']" class="btn btn-primary">Navigate</a>
+              <h5 class="card-title">Wether App</h5>
+              <p   class="card-text">Using openWether API built a real time weather app.</p>
+              <a [routerLink]="['/weather']" class="btn btn-light">Check todays weather</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Wether App</h5>
-              <p   class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a [routerLink]="['/weather']" class="btn btn-primary">Check todays weather</a>
-            </div>
-          </div> 
-        </div>
       </div>
 </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card card text-bg-success">
+            <div class="card-body">
+              <h5 class="card-title">Kanban</h5>
+              <p class="card-text">Used Angular Material to display drag and drop functionality</p>
+              <a [routerLink]="['/kanban']" class="btn btn-light">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card text-bg-danger">
+            <div class="card-body">
+              <h5 class="card-title">Issue List</h5>
+              <p   class="card-text">A full-Stack application with Angular and express.js</p>
+              <a [routerLink]="['/video/issueList']" class="btn btn-light">view</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card text-bg-warning mb-3">
+            <div class="card-body">
+              <h5 class="card-title">To Do List</h5>
+              <p class="card-text">A full-Stack application with Angular and express.js</p>
+              <a  [routerLink]="['/video/todoList']"class="btn btn-light">View</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
 
