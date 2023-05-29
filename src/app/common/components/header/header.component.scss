@@ -4,3 +4,18 @@
   margin-right:auto;
   margin-left:auto
 }
+
+.navbar-brand{
+  padding-left: 3%;
+}
+
+@media (max-width: 767px) {
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-links .nav-item {
+    margin-bottom: 10px;
+  }
+}
