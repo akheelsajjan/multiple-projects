@@ -18,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,8 +40,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
     MatButtonModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <h3>Alert Button</h3>
+  <article [hidden]="hideContent" class="div">
+    <div class="alert alert-warning" role="alert">
+       <p > Warning Code {{severity}}</p>
+    </div>
+    <div class="div2">
+     <p class="message-body">{{ content | async }}</p>
+    </div>
+
+  </article>
+  <button  class="btn btn-primary" (click)="toggle()" > Toggle Visibility </button>
+</div>

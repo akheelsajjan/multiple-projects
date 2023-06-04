@@ -3,16 +3,19 @@
     <div class="card-header">
       <h5 class="card-title">{{ weatherData.name }}</h5>
       <p class="card-subtitle text-muted">{{ weatherData.sys.country }}</p>
+      <p class="card-subtitle text-muted">Sunrise (IST): {{ sunriseIST }}</p>
+      <p class="card-subtitle text-muted">Sunset (IST): {{ sunsetIST }}</p>
+
     </div>
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
           <h6>Temperature</h6>
-          <p>{{ weatherData.main.temp }} &deg;C</p>
+          <p>{{ weatherData.main.temp - 273.15 | number : '1.2-2' }} &deg;C</p>
         </div>
         <div class="col-md-6">
           <h6>Feels Like</h6>
-          <p>{{ weatherData.main.feels_like }} &deg;C</p>
+          <p>{{ weatherData.main.feels_like - 273.15 | number : '1.2-2'}} &deg;C</p>
         </div>
       </div>
       <div class="row">

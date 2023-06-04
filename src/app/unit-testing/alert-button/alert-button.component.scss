@@ -1,0 +1,19 @@
+.container-fluid {
+  height: 30vh; /* Set the height to 100% of the viewport height */
+  display: grid;
+  place-items: center;
+}
+
+.div{
+  min-width: 70vw;
+  padding: 10px;
+  border: solid 0.5px;
+}
+
+.div2{
+  padding: 10px;
+}
+
+.alert{
+  margin-bottom: 0;
+}
